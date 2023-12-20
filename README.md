@@ -1,4 +1,11 @@
-# AlfianPortfolio
+# Alfian Portfolio
+
+## Things to work on
+- [ ] Make router-outlet center and 1/4 or 1/5 width for all pages
+- [ ] Create 2x2 card layout to display personal work in Projects & Work page
+- [ ] Fill content with necessary information for Projets & Work
+- [ ] Ensure all links are working
+- [X] Animate page navigation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
