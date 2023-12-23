@@ -15,4 +15,6 @@ RUN npm install
 # Generate the build of the application
 RUN npm run build
 
+COPY --from=build /usr/local/app/dist/Alfian-Portfolio /user/share/nginx/html
+
 EXPOSE 7000
