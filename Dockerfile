@@ -1,20 +1,12 @@
-# Stage 1: Compile and Build angular codebase
-
-# Use official node image as the base image
-FROM node:latest as build
-
-# Set the working directory
-WORKDIR /usr/local/app
-
-# Add the source code to app
-COPY ./ /usr/local/app/
-
-# Install all the dependencies
+### STAGE 1: Build ###
+FROM node:latest AS build
+WORKDIR /usr/src/app
+COPY package.json package-lock.json ./
 RUN npm install
-
-# Generate the build of the application
+COPY . .
 RUN npm run build
 
-COPY --from=build /usr/local/app/dist/Alfian-Portfolio /user/share/nginx/html
-
-EXPOSE 7000
+### STAGE 2: Run ###
+FROM nginx:latest
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /usr/src/app/dist/alfian-portfolio /usr/share/nginx/html
