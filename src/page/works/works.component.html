@@ -1,26 +1,72 @@
 <div class="flex flex-col container gap-5 animate-sliding-in">
-  <h3 class="text-4xl font-bold w-full">Works</h3>
-  <div class="flex flex-row flex-wrap justify-around">
-    <div class="flex flex-col w-1/3 text-center">
-      <img
-        src="/assets/images/profile-pic.jpg"
-        alt=""
-        width="250px"
-        height="100px"
-      />
-      <h3>Work 1</h3>
-      <p>Just a placeholder of the work description. Edit this please</p>
+  <h3 class="text-4xl font-bold w-full">As an IT Support</h3>
+  <div class="grid grid-cols-2 w-full gap-10">
+    <div
+      class="flex flex-col w-full text-justify gap-2"
+      [routerLink]="['/works/interviewsconnect']"
+    >
+      <div class="flex justify-center h-[150px] bg-[#FAF9F6] rounded p-2">
+        <img
+          src="./assets/images/interviewsconnect-logo.png"
+          alt=""
+          width="200px"
+          height="50px"
+        />
+      </div>
+      <h3 class="text-center">Interviewsconnect</h3>
+      <p>
+        Initiated by Octopus8, InterviewsConnect is a program that is for the
+        youth, by the youth.
+      </p>
     </div>
-    <div class="flex flex-col w-1/3 text-center">
-      <img
-        src="/assets/images/profile-pic.jpg"
-        alt=""
-        width="250px"
-        height="100px"
-      />
-      <h3>Work 2</h3>
-      <p>Just a placeholder of the work description. Edit this please</p>
+  </div>
+  <h3 class="text-4xl font-bold w-full">As a Developer</h3>
+  <div class="grid grid-cols-2 w-full gap-10">
+    <div
+      class="flex flex-col text-justify gap-2"
+      [routerLink]="['/works/jigsawme']"
+    >
+      <div class="flex justify-center h-[150px] bg-[#FAF9F6] rounded p-2">
+        <img
+          src="./assets/images/clown-w-text.png"
+          alt=""
+          width="110px"
+          height="70px"
+        />
+      </div>
+      <h3 class="text-center">JigSaw Me</h3>
+      <p>Online game that uncovers a person's financial personality type</p>
     </div>
-  
+    <div
+      class="flex flex-col text-justify gap-2"
+      [routerLink]="['/works/idportfolio']"
+    >
+      <div class="flex justify-center h-[150px] bg-[#FAF9F6] rounded p-2">
+        <img
+          src="./assets/images/second_image_website.PNG"
+          alt=""
+        />
+      </div>
+      <h3 class="text-center">Personal Portfolio</h3>
+      <p>School assignment for Interactive Design Module</p>
+    </div>
+  </div>
+  <h3 class="text-4xl font-bold w-full">As a Project Manager</h3>
+  <div class="grid grid-cols-2 w-full gap-10">
+    <div
+      class="flex flex-col text-justify gap-2"
+      [routerLink]="['/works/np-mp']"
+    >
+      <div class="flex justify-center h-[150px] bg-[#FAF9F6] rounded p-2">
+        <img
+          src="./assets/images/requestor 1.jpg"
+          alt=""
+          width="200px"
+          height="100px"
+        />
+      </div>
+      <h3 class="text-center">NP MP</h3>
+      <p>A Cloud Project developed in MOM</p>
+    </div>
   </div>
 </div>
