@@ -12,6 +12,10 @@ module.exports = {
       animation: {
         'sliding-in': 'slidein 1s linear',
       },
+      colors: {
+          'primary': '#DF2935',
+          'secondary': '#C6CAED',
+      },
     },
   },
   plugins: [],
