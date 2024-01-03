@@ -11,6 +11,7 @@ import { InterviewsconnectComponent } from 'src/page/works/interviewsconnect/int
 import { JigsawmeComponent } from 'src/page/works/jigsawme/jigsawme.component';
 import { IDPortfolioComponent } from "src/page/works/idportfolio/idportfolio.component";
 import { NpMpComponent } from "src/page/works/np-mp/np-mp.component";
+import { BreadcrumbComponent } from "src/components/breadcrumb/breadcrumb.component";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NpMpComponent } from "src/page/works/np-mp/np-mp.component";
     JigsawmeComponent,
     IDPortfolioComponent,
     NpMpComponent,
+    BreadcrumbComponent,
     HeaderComponent,
     FooterComponent,
   ],
