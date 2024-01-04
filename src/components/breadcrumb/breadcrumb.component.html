@@ -1,7 +1,6 @@
 <div>
-    <span *ngFor="let link of linkArray">
-        <a routerLink="/{{link}}" routerLinkActive="router-link-active"> {{link}}</a>
-        /
+    <a routerLink="/{{linkArray[0]}}">{{linkArray[0]}} / </a>
+    <span *ngFor="let link of linkArray; let last = last">
+        <a class="font-bold text-xl" *ngIf="last" routerLink="../{{link}}">{{link}}</a>
     </span>
-
 </div>
